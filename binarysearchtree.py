@@ -60,8 +60,3 @@ class BST:
 
 
 newtree = BST()
-
-vals = [5,0,2,4,6]
-
-for x in vals:
-	vals.insert(vals, x)
