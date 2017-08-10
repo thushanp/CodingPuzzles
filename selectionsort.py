@@ -11,9 +11,7 @@ storage = s
 while len(storage) != 0:
 	temp = storage[0]
 	for x in storage:
-		if temp <= x:
-			temp = temp
-		else:
+		if temp > x:
 			temp = x
 	sortedlst.append(temp)
 	storage.remove(temp)
