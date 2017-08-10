@@ -27,7 +27,7 @@ def msort3(x):
             result.append(y[i])
             i += 1
 
-    # concatenate the lower and upper half
+    # concatenate the last part of the other half
     result += y[i:]
     result += z[j:]
     return result
