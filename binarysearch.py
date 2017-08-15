@@ -7,7 +7,7 @@ def binarysearch(val, x):
 	if val == x[0]:
 		print "value found"
 	elif len(x) < 2:
-			print "value not found in array"
+		print "value not found in array"
 	else:
 		mid = int(len(x)/2) 
 		if val < x[mid]:
