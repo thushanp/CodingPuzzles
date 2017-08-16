@@ -1,15 +1,19 @@
 array = [3,5,7,2,4,7,8]
 
 mydict = dict()
-findsum = 15
+findsum = 14
 
 for x in array:
-	mydict[x] = x
+	mydict.setdefault(x,[])
+	mydict[x].append(x)
 
 for x in array:
 	try:
-		if mydict[findsum - x] == findsum - x:
-			continue
+		if findsum - x == x and mydict[findsum - x][1] == findsum - x:
+			print "found duplicate"
+			break
+		elif mydict[findsum - x][0] == findsum - x:
+			print "found!"
+			break
 	except:
-		print "sum not found"
-		break
+		continue
