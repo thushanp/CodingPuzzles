@@ -1,3 +1,5 @@
+# introduction to matrices in numpy
+
 from numpy import matrix
 from numpy import linalg
 A = matrix( [[1,2,3],[11,12,13],[21,22,23]]) # Creates a matrix.

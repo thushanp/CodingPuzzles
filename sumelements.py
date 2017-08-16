@@ -1,3 +1,5 @@
+# given an array, find out if there are two elements in it that sum to a given number
+
 array = [3,5,7,2,4,7,8]
 
 mydict = dict()
