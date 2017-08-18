@@ -26,6 +26,30 @@ def findalternator(array):
 				tracker = 0
 			else:
 				tracker = 0
-	return currentbeg, currenthigh
+	
+	if currentbeg == 1:
+		switch = True
+		lst = []
+		for x in range(0,currenthigh):
+			if switch == True:
+				lst.append(1)
+				switch = False
+			else:
+				lst.append(0)
+				switch = True
+	elif currentbeg == 0:
+		switch = True
+		lst = []
+		for x in range(0,currenthigh):
+			if switch == True:
+				lst.append(0)
+				switch = False
+			else:
+				lst.append(1)
+				switch = True
 
-print(findalternator(second))
+	print(lst)
+
+
+
+findalternator(second)
