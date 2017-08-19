@@ -7,7 +7,7 @@ mydict = dict()
 for x in array:
 	mydict.setdefault(x,None)
 	if mydict[x] != None:
-		print("found the duplicate, it's", x)
+		print("found the duplicate, it's %d" %x)
 		break
 	else:
 		mydict[x]=x
